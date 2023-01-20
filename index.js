@@ -161,6 +161,7 @@ function createPost(newPost) {
             const userComment = document.createElement("div")
             userComment.innerHTML = `<span class="comment-name">You</span> ${newComment.value}`
             comments.append(userComment)
+            newComment.value = ""
         }
     })
 }
