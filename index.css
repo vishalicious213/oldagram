@@ -78,9 +78,19 @@ header img {
         width: 100%;
     }
 
-.buttons {
+.buttons-container {
     outline: 1px solid green;
+    display: flex;
 }
+
+    .button-img-container {
+        width: 1.5rem;
+        margin: 1rem .5rem;
+    }
+
+        .icon {
+            width: 100%;
+        }
 
 .comments {
     outline: 1px solid blue;
