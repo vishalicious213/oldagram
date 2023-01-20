@@ -4,6 +4,11 @@ html, body {
     max-width: 375px;
     margin: 0 auto;
     font-family: 'Source Sans Pro', sans-serif;
+    background-color: #ededed;
+}
+
+main {
+    background-color: white;
 }
 
 .separator {
@@ -21,6 +26,7 @@ header {
     padding: 1rem;
     height: 70px;
     border-bottom: 1px solid #c6c6c6;
+    background-color: white;
 }
 
 header img {
