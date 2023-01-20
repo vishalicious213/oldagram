@@ -52,6 +52,8 @@ function createPost(newPost) {
     const buttonImg1 = document.createElement("img")
     const buttonImg2 = document.createElement("img")
     const buttonImg3 = document.createElement("img")
+    // post likes
+    const postLikes = document.createElement("div")
 
     // add classes to elements
     post.classList.add("post")
@@ -73,6 +75,8 @@ function createPost(newPost) {
     buttonImg1.classList.add("icon")
     buttonImg2.classList.add("icon")
     buttonImg3.classList.add("icon")
+    // post likes
+    postLikes.classList.add("post-likes")
 
     // append elements onscreen
     main.append(post)
@@ -91,6 +95,7 @@ function createPost(newPost) {
             buttonImgContainer2.append(buttonImg2)
         buttonsContainer.append(buttonImgContainer3)
             buttonImgContainer3.append(buttonImg3)
+    post.append(postLikes)
 
     // add content to elements
     postHeaderUser.textContent = newPost.name
@@ -100,6 +105,7 @@ function createPost(newPost) {
     buttonImg1.src = "/img/icon-heart.png"
     buttonImg2.src = "/img/icon-comment.png"
     buttonImg3.src = "/img/icon-dm.png"
+    postLikes.textContent = `${newPost.likes} likes`
 }
 
 // loop through posts array and render each post
