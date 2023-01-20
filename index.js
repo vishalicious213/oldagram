@@ -3,8 +3,8 @@ const posts = [
         name: "Vincent van Gogh",
         username: "vincey1853",
         location: "Zundert, Netherlands",
-        avatar: "images/avatar-vangogh.jpg",
-        post: "images/post-vangogh.jpg",
+        avatar: "img/avatar-vangogh.jpg",
+        post: "img/post-vangogh.jpg",
         comment: "just took a few mushrooms lol",
         likes: 21
     },
@@ -12,8 +12,8 @@ const posts = [
         name: "Gustave Courbet",
         username: "gus1819",
         location: "Ornans, France",
-        avatar: "images/avatar-courbet.jpg",
-        post: "images/post-courbet.jpg",
+        avatar: "img/avatar-courbet.jpg",
+        post: "img/post-courbet.jpg",
         comment: "i'm feelin a bit stressed tbh",
         likes: 4
     },
@@ -21,8 +21,8 @@ const posts = [
         name: "Joseph Ducreux",
         username: "jd1735",
         location: "Paris, France",
-        avatar: "images/avatar-ducreux.jpg",
-        post: "images/post-ducreux.jpg",
+        avatar: "img/avatar-ducreux.jpg",
+        post: "img/post-ducreux.jpg",
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152
     }
@@ -31,7 +31,7 @@ const posts = [
 const main = document.querySelector("main")
 
 // render posts
-function createPost() {
+function createPost(newPost) {
     // create post elements
     const post = document.createElement("section")
 
@@ -60,7 +60,13 @@ function createPost() {
             postHeaderText.append(postHeaderUser)
             postHeaderText.append(postHeaderLocation)
 
-    // post.textContent = posts[01].name
+    // add content to elements
+    postHeaderUser.textContent = newPost.name
+    postHeaderLocation.textContent = newPost.location
+    postHeaderImg.src = newPost.avatar
 }
 
-createPost()
+// loop through posts array and render each post
+for (i = 0; i < posts.length; i++) {
+    createPost(posts[i])
+}
