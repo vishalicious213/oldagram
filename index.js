@@ -160,7 +160,7 @@ function createPost(newPost) {
         if (newComment.value) {
             console.log("clicked")
             const userComment = document.createElement("div")
-            userComment.textContent = newComment.value
+            userComment.innerHTML = `<span class="comment-name">You</span> ${newComment.value}`
             comments.append(userComment)
         }
     })
