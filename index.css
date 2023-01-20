@@ -3,6 +3,8 @@ html, body {
     padding: 0;
 }
 
+/* HEADER */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -27,4 +29,43 @@ header img {
 
 .user-img {
     border-radius: 50%;
+}
+
+/* POST */
+
+.post {
+    outline: 1px solid red;
+}
+
+.post-header {
+    outline: 1px solid orange;
+    display: flex;
+}
+
+    .post-header-img {
+        outline: 1px solid red;
+    }
+
+    .post-header-text {
+        outline: 1px solid orange;
+    }
+
+    .post-header-user {
+        outline: 1px solid green;
+    }
+
+    .post-header-location {
+        outline: 1px solid blue;
+    }
+
+.post-img {
+    outline: 2px solid yellow;
+}
+
+.buttons {
+    outline: 1px solid green;
+}
+
+.comments {
+    outline: 1px solid blue;
 }
