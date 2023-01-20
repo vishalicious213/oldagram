@@ -100,6 +100,10 @@ header img {
             width: 100%;
         }
 
+        .icon:hover {
+            opacity: 0.5;
+        }
+
 /* POST LIKES */
 
 .post-likes {
