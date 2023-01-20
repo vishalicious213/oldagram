@@ -158,7 +158,6 @@ function createPost(newPost) {
     // let user add comments
     newCommentButton.addEventListener("click", function() {
         if (newComment.value) {
-            console.log("clicked")
             const userComment = document.createElement("div")
             userComment.innerHTML = `<span class="comment-name">You</span> ${newComment.value}`
             comments.append(userComment)
