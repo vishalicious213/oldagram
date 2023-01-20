@@ -92,6 +92,11 @@ header img {
             width: 100%;
         }
 
+.post-likes {
+    margin: 0 .5rem;
+    font-weight: 700;
+}
+
 .comments {
     outline: 1px solid blue;
 }
