@@ -125,10 +125,23 @@ function createPost(newPost) {
     commentText.textContent = newPost.comment
 
     // increment likes if like button is clicked
+    let liked = false
     buttonImg1.addEventListener("click", function() {
-        newPost.likes += 1
-        postLikes.textContent = `${newPost.likes} likes`
-        buttonImg1.src = "/img/icon-heart-red.png"
+        if (liked === false) {
+            newPost.likes += 1
+            postLikes.textContent = `${newPost.likes} likes`
+            buttonImg1.src = "/img/icon-heart-red.png"
+            liked = true
+            return
+        }
+
+        if (liked === true) {
+            newPost.likes -= 1
+            postLikes.textContent = `${newPost.likes} likes`
+            buttonImg1.src = "/img/icon-heart.png"
+            liked = false
+            return
+        }
     })
 }
 
