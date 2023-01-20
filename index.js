@@ -123,6 +123,12 @@ function createPost(newPost) {
     postLikes.textContent = `${newPost.likes} likes`
     commentName.textContent = `${newPost.username} `
     commentText.textContent = newPost.comment
+
+    // increment likes if like button is clicked
+    buttonImg1.addEventListener("click", function() {
+        newPost.likes += 1
+        postLikes.textContent = `${newPost.likes} likes`
+    })
 }
 
 // loop through posts array and render each post
