@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     max-width: 375px;
     margin: 0 auto;
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -15,6 +15,7 @@ header {
     align-items: center;
     padding: 1rem;
     height: 70px;
+    border-bottom: 1px solid #c6c6c6;
 }
 
 header img {
@@ -35,9 +36,10 @@ header img {
 
 /* POST */
 
-/* .post {
-    outline: 1px solid red;
-} */
+.post {
+    /* outline: 1px solid red; */
+    margin-bottom: 1.5rem;
+}
 
 /* POST HEADER */
 
@@ -83,31 +85,35 @@ header img {
     }
 
 .buttons-container {
-    /* outline: 1px solid green; */
+    /* outline: 2px solid yellow; */
     display: flex;
 }
 
     .button-img-container {
+        /* outline: 2px solid orange; */
         width: 1.5rem;
-        margin: 1rem .5rem;
+        margin: 1rem .5rem .5rem;
     }
 
         .icon {
+            /* outline: 1px solid red; */
             width: 100%;
         }
 
 /* POST LIKES */
 
 .post-likes {
-    margin: 0 .5rem;
+    /* outline: 1px solid green; */
+    padding: 0 .5rem;
     font-weight: 700;
 }
 
 /* POST COMMENTS */
 
-/* .comments {
-    outline: 1px solid blue;
-} */
+.comments {
+    /* outline: 1px solid blue; */
+    padding: .5rem;
+}
 
     .comment-name {
         font-weight: 700;
