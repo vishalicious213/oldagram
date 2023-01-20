@@ -34,28 +34,45 @@ const main = document.querySelector("main")
 function createPost(newPost) {
     // create post elements
     const post = document.createElement("section")
-
+    // post header elements
     const postHeader = document.createElement("div")
     const postHeaderImgContainer = document.createElement("div")
     const postHeaderImg = document.createElement("img")
     const postHeaderText = document.createElement("div")
     const postHeaderUser = document.createElement("div")
     const postHeaderLocation = document.createElement("div")
-
+    // post image elements
     const postImgContainer = document.createElement("div")
     const postImg = document.createElement("img")
+    // post buttons
+    const buttonsContainer = document.createElement("div")
+    const buttonImgContainer1 = document.createElement("div")
+    const buttonImgContainer2 = document.createElement("div")
+    const buttonImgContainer3 = document.createElement("div")
+    const buttonImg1 = document.createElement("img")
+    const buttonImg2 = document.createElement("img")
+    const buttonImg3 = document.createElement("img")
 
     // add classes to elements
     post.classList.add("post")
+    // post header elements
     postHeader.classList.add("post-header")
     postHeaderImgContainer.classList.add("post-header-img-container")
     postHeaderImg.classList.add("post-header-img")
     postHeaderText.classList.add("post-header-text")
     postHeaderUser.classList.add("post-header-user")
     postHeaderLocation.classList.add("post-header-location")
-
+    // post image elements
     postImgContainer.classList.add("post-img-container")
     postImg.classList.add("post-img")
+    // post buttons
+    buttonsContainer.classList.add("buttons-container")
+    buttonImgContainer1.classList.add("button-img-container")
+    buttonImgContainer2.classList.add("button-img-container")
+    buttonImgContainer3.classList.add("button-img-container")
+    buttonImg1.classList.add("icon")
+    buttonImg2.classList.add("icon")
+    buttonImg3.classList.add("icon")
 
     // append elements onscreen
     main.append(post)
@@ -67,12 +84,22 @@ function createPost(newPost) {
             postHeaderText.append(postHeaderLocation)
     post.append(postImgContainer)
         postImgContainer.append(postImg)
+    post.append(buttonsContainer)
+        buttonsContainer.append(buttonImgContainer1)
+            buttonImgContainer1.append(buttonImg1)
+        buttonsContainer.append(buttonImgContainer2)
+            buttonImgContainer2.append(buttonImg2)
+        buttonsContainer.append(buttonImgContainer3)
+            buttonImgContainer3.append(buttonImg3)
 
     // add content to elements
     postHeaderUser.textContent = newPost.name
     postHeaderLocation.textContent = newPost.location
     postHeaderImg.src = newPost.avatar
-    postImg.src= newPost.post
+    postImg.src = newPost.post
+    buttonImg1.src = "/img/icon-heart.png"
+    buttonImg2.src = "/img/icon-comment.png"
+    buttonImg3.src = "/img/icon-dm.png"
 }
 
 // loop through posts array and render each post
