@@ -128,6 +128,7 @@ function createPost(newPost) {
     buttonImg1.addEventListener("click", function() {
         newPost.likes += 1
         postLikes.textContent = `${newPost.likes} likes`
+        buttonImg1.src = "/img/icon-heart-red.png"
     })
 }
 
