@@ -27,3 +27,40 @@ const posts = [
         likes: 152
     }
 ]
+
+const main = document.querySelector("main")
+
+// render posts
+function createPost() {
+    // create post elements
+    const post = document.createElement("section")
+
+    const postHeader = document.createElement("div")
+    const postHeaderImgContainer = document.createElement("div")
+    const postHeaderImg = document.createElement("img")
+    const postHeaderText = document.createElement("div")
+    const postHeaderUser = document.createElement("div")
+    const postHeaderLocation = document.createElement("div")
+
+    // add classes to elements
+    post.classList.add("post")
+    postHeader.classList.add("post-header")
+    postHeaderImgContainer.classList.add("post-header-img-container")
+    postHeaderImg.classList.add("post-header-img")
+    postHeaderText.classList.add("post-header-text")
+    postHeaderUser.classList.add("post-header-user")
+    postHeaderLocation.classList.add("post-header-location")
+
+    // append elements onscreen
+    main.append(post)
+    post.append(postHeader)
+        postHeader.append(postHeaderImgContainer)
+            postHeaderImgContainer.append(postHeaderImg)
+        postHeader.append(postHeaderText)
+            postHeaderText.append(postHeaderUser)
+            postHeaderText.append(postHeaderLocation)
+
+    // post.textContent = posts[01].name
+}
+
+createPost()
