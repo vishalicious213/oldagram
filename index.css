@@ -1,6 +1,9 @@
 html, body {
     margin: 0;
     padding: 0;
+    max-width: 375px;
+    margin: 0 auto;
+    outline: 1px dashed red;
 }
 
 /* HEADER */
@@ -9,9 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     padding: 1rem;
-    max-width: 375px;
     height: 70px;
 }
 
@@ -40,22 +41,31 @@ header img {
 .post-header {
     outline: 1px solid orange;
     display: flex;
+    align-items: center;
+    padding: .75rem;
 }
 
+    .post-header-img-container {
+        /* outline: 1px solid red; */
+        width: 15%;
+        margin-right: .5rem;
+    }
+
     .post-header-img {
-        outline: 1px solid red;
+        width: 100%;
+        border-radius: 50%;
     }
 
     .post-header-text {
-        outline: 1px solid orange;
+        /* outline: 1px solid orange; */
     }
 
     .post-header-user {
-        outline: 1px solid green;
+        /* outline: 1px solid green; */
     }
 
     .post-header-location {
-        outline: 1px solid blue;
+        /* outline: 1px solid blue; */
     }
 
 .post-img {
