@@ -40,7 +40,7 @@ header img {
 }
 
 .post-header {
-    outline: 1px solid orange;
+    /* outline: 1px solid orange; */
     display: flex;
     align-items: center;
     padding: .75rem;
@@ -63,15 +63,20 @@ header img {
 
     .post-header-user {
         /* outline: 1px solid green; */
+        font-weight: 700;
     }
 
     .post-header-location {
         /* outline: 1px solid blue; */
     }
 
-.post-img {
-    outline: 2px solid yellow;
+.post-img-container {
+    /* outline: 2px solid yellow; */
 }
+
+    .post-img {
+        width: 100%;
+    }
 
 .buttons {
     outline: 1px solid green;
