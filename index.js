@@ -154,6 +154,16 @@ function createPost(newPost) {
             return
         }
     })
+
+    // let user add comments
+    newCommentButton.addEventListener("click", function() {
+        if (newComment.value) {
+            console.log("clicked")
+            const userComment = document.createElement("div")
+            userComment.textContent = newComment.value
+            comments.append(userComment)
+        }
+    })
 }
 
 // loop through posts array and render each post
