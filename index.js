@@ -42,6 +42,9 @@ function createPost(newPost) {
     const postHeaderUser = document.createElement("div")
     const postHeaderLocation = document.createElement("div")
 
+    const postImgContainer = document.createElement("div")
+    const postImg = document.createElement("img")
+
     // add classes to elements
     post.classList.add("post")
     postHeader.classList.add("post-header")
@@ -51,6 +54,9 @@ function createPost(newPost) {
     postHeaderUser.classList.add("post-header-user")
     postHeaderLocation.classList.add("post-header-location")
 
+    postImgContainer.classList.add("post-img-container")
+    postImg.classList.add("post-img")
+
     // append elements onscreen
     main.append(post)
     post.append(postHeader)
@@ -59,11 +65,14 @@ function createPost(newPost) {
         postHeader.append(postHeaderText)
             postHeaderText.append(postHeaderUser)
             postHeaderText.append(postHeaderLocation)
+    post.append(postImgContainer)
+        postImgContainer.append(postImg)
 
     // add content to elements
     postHeaderUser.textContent = newPost.name
     postHeaderLocation.textContent = newPost.location
     postHeaderImg.src = newPost.avatar
+    postImg.src= newPost.post
 }
 
 // loop through posts array and render each post
