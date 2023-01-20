@@ -4,6 +4,7 @@ html, body {
     max-width: 375px;
     margin: 0 auto;
     outline: 1px dashed red;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* HEADER */
