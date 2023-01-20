@@ -110,3 +110,21 @@ header img {
 .comment-name {
     font-weight: 700;
 }
+
+.new-comment {
+    margin: .5rem;
+    width: 85%;
+}
+
+.new-comment:focus {
+    outline: none;
+}
+
+.new-comment-button {
+    border: none;
+    border-radius: 50%;
+}
+
+.new-comment-button:hover {
+    outline: 1px solid dimgray;
+}

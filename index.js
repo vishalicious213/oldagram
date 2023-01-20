@@ -59,6 +59,12 @@ function createPost(newPost) {
     const comments = document.createElement("div")
     const commentName = document.createElement("span")
     const commentText = document.createElement("span")
+    // user comment
+    const newCommentContainer = document.createElement("div")
+    const newComment = document.createElement("input")
+    newComment.type = "text"
+    const newCommentButton = document.createElement("button")
+    newCommentButton.type = "button"
 
     // add classes to elements
     post.classList.add("post")
@@ -87,7 +93,8 @@ function createPost(newPost) {
     comments.classList.add("comments")
     commentName.classList.add("comment-name")
     commentText.classList.add("comment-text")
-
+    newComment.classList.add("new-comment")
+    newCommentButton.classList.add("new-comment-button")
 
     // append elements onscreen
     main.append(post)
@@ -110,6 +117,9 @@ function createPost(newPost) {
     post.append(comments)
         comments.append(commentName)
         comments.append(commentText)
+    post.append(newCommentContainer)
+        newCommentContainer.append(newComment)
+        newCommentContainer.append(newCommentButton)
     post.append(separator)
 
     // add content to elements
@@ -123,6 +133,7 @@ function createPost(newPost) {
     postLikes.textContent = `${newPost.likes} likes`
     commentName.textContent = `${newPost.username} `
     commentText.textContent = newPost.comment
+    newCommentButton.textContent = ">"
 
     // increment likes if like button is clicked
     let liked = false
