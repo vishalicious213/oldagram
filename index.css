@@ -6,6 +6,12 @@ html, body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.separator {
+    background-color: #ededed;
+    height: 1.5rem;
+    margin: 1rem 0 0;
+}
+
 /* HEADER */
 
 header {
@@ -31,12 +37,6 @@ header img {
 
 .user-img {
     border-radius: 50%;
-}
-
-/* POST */
-
-.post {
-    margin-bottom: 1.5rem;
 }
 
 /* POST HEADER */

@@ -34,6 +34,7 @@ const main = document.querySelector("main")
 function createPost(newPost) {
     // create post elements
     const post = document.createElement("section")
+    const separator = document.createElement("div")
     // post header elements
     const postHeader = document.createElement("div")
     const postHeaderImgContainer = document.createElement("div")
@@ -61,6 +62,7 @@ function createPost(newPost) {
 
     // add classes to elements
     post.classList.add("post")
+    separator.classList.add("separator")
     // post header elements
     postHeader.classList.add("post-header")
     postHeaderImgContainer.classList.add("post-header-img-container")
@@ -108,6 +110,7 @@ function createPost(newPost) {
     post.append(comments)
         comments.append(commentName)
         comments.append(commentText)
+    post.append(separator)
 
     // add content to elements
     postHeaderUser.textContent = newPost.name
