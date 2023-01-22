@@ -9,5 +9,16 @@ HTML concepts
 - \<section>
 - classes
 
+CSS concepts
+
+- Flexbox
+    - display: flex
+    - justify-content
+    - align items
+- :hover
+- opacity
+- cursor: pointer
+
+
 
 Deployed at: https://vish213-oldagram.netlify.app/
